@@ -1,0 +1,42 @@
+body {
+    font-family: monospace, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+h1, h2 {
+    color: #5e5735;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+p {
+    margin-left: 20px; /* Añade 20px de espacio desde el margen izquierdo */
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+embed {
+    display: block;
+    margin: 0 auto; /* Márgenes automáticos para centrar */
+}

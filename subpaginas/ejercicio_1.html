@@ -4,16 +4,23 @@
     <meta charset="utf-8">
     <title>Perfil personal</title>
     <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
-    <ol>
-        <li><a href="../index.html">Primera pagina</li></a>
-        <li><a href="tablas.html">Tablas/formularios</li></a>
-        <li><a href="listas.html">Listas/imagenes</li></a>
-        <li><a href="ejercicio_2.html">Ejercicio 2</li></a>
-    </ol>
-    <hr>
+    <section>
+        <h2>Menu de proyectos</h2>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Primera pagina</li></a>
+                <li><a href="tablas.html">Tablas/formularios</li></a>
+                <li><a href="listas.html">Listas/imagenes</li></a>
+                <li><a href="ejercicio_1.html">Ejercicio 1</li></a>
+                <li><a href="ejercicio_2.html">Ejercicio 2</li></a>
+            </ul>
+        </nav>
+        <hr>
+    </section>
 
     <h1>Perfil personal</h1>
     <h2>El objetivo de este ejercicio es hacer una pagina personal con informacion importante sobre mi</h2>
@@ -39,10 +46,10 @@
 
     
         <p><h2>A continuacion añado dos versiones de mi cv, he usado este codigo: <img src="../img/codigo_pdf.png" alt="codigo para insertar pdf dentro de una web html"></h2></p>
-
-    <embed src="../files/cv_basic.pdf" type="application/pdf" width="600" height="800"> <embed src="../files/cv_europass.pdf" type="application/pdf" width="600" height="800">
-
-
+        <div class="container">
+            <embed class="cv_pdf" src="../files/cv_basic.pdf" type="application/pdf" width="600" height="800">
+            <embed class="cv_pdf" src="../files/cv_europass.pdf" type="application/pdf" width="600" height="800">
+         </div>
 
 
 

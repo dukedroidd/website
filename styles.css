@@ -1,42 +1,71 @@
-body {
-    font-family: monospace, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-}
-
-h1, h2 {
-    color: #5e5735;
+body h1{
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-ul {
-    list-style: none;
+body h2{
     text-align: center;
-    padding: 0;
-}
-p {
-    margin-left: 20px; /* Añade 20px de espacio desde el margen izquierdo */
+    font-family: 'Poppins', sans-serif;
 }
 
-a {
-    color: #0066cc;
-    text-decoration: none;
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #dbdbdb;
+
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    text-wrap: auto;
+}
+nav ul {
+    display: flex; /* Activar flexbox */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    align-items: center; /* (opcional) Centrar verticalmente */
+    list-style: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Eliminar el relleno interno */
+    margin: 0; /* Eliminar márgenes externos */
+    background-color: #dadada;
 }
 
-a:hover {
-    text-decoration: underline;
+nav ul li a {
+    margin-left: 0px;
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none; /* Quitar subrayado */
+    padding: 10px 20px;
+    border: 2px solid #00d45f57; /* Borde moderno */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #90e79e; /* Fondo claro */
+    color: #00442a; /* Texto color moderno */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: all 0.4s ease; /* Transición suave */
+    background-color: dadada;
+    
 }
 
-img {
-    display: block;
-    margin: 10px auto;
-    max-width: 100%;
-    height: auto;
+nav ul li a:hover {
+    background-color: #00d45fb6; /* Cambio de color al pasar el ratón */
+    color: white; /* Texto blanco */
+    transform: translateY(-2px); /* Efecto de elevación */
 }
 
-embed {
-    display: block;
-    margin: 0 auto; /* Márgenes automáticos para centrar */
+.container {
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente los PDFs */
+    align-items: center; /* Centra verticalmente (opcional) */
+    gap: 25px; /* Espacio entre los PDFs */
+    flex-wrap: wrap; /* Permite que los PDFs bajen a otra fila si no hay espacio */
+    min-height: 100vh; /* Centra en toda la pantalla */
+}
+
+.cv_pdf {
+    border: 1px solid #000000; /* (Opcional) Borde para destacar los PDFs */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease; /* Efecto al pasar el ratón */
+}
+
+.cv_pdf:hover {
+    transform: scale(1.07); /* Ampliar ligeramente al pasar el ratón */
 }

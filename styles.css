@@ -6,12 +6,18 @@ body h1{
 body h2{
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #dbdbdb;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -26,8 +32,12 @@ nav ul {
     padding: 0; /* Eliminar el relleno interno */
     margin: 0; /* Eliminar márgenes externos */
     background-color: #dadada;
+    
 }
-
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
 nav ul li a {
     margin-left: 0px;
     margin: 5px;
@@ -68,4 +78,23 @@ nav ul li a:hover {
 
 .cv_pdf:hover {
     transform: scale(1.07); /* Ampliar ligeramente al pasar el ratón */
+}
+
+img {
+    border: 1px solid #000000; /* (Opcional) Borde para destacar las imagenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease; /* Efecto al pasar el ratón */
+}
+
+img:hover {
+    transform: scale(1.07); /* Ampliar ligeramente al pasar el ratón */
+}
+
+a {
+    color: #00d45fb6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

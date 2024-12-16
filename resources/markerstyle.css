@@ -1,0 +1,153 @@
+body{
+    transition: background-color 0.8s ease, color 0.8s ease;
+    background-color: #ececec;
+}
+h1 {
+    text-align: center;
+}
+
+.marker{
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.red{
+    background: linear-gradient( rgb(122, 74, 14) , rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0px 0px 20px 0px rgba(83, 14, 14, 0.8);
+}
+
+.green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0px 0px 20px 0px #3b7e20cc;
+}
+.blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0px 0px 20px 0px hsl(223, 59%, 31%, 0.8);
+}
+
+.container{
+    background-color: #ececec;
+    padding: 10px 0;
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.sleeve{
+    background-color: rgba(255,255,255,50%);
+    width: 110px;
+    height: 25px;
+    border-left: 10px double rgba(0, 0, 0, 75%);
+}
+
+.cap{
+    width: 60px;
+    height: 25px;
+}
+
+.cap, .sleeve{
+    display: inline-block;
+}
+
+.navegador{
+    nav ul {
+        display: flex; /* Activar flexbox */
+        justify-content: center; /* Centrar horizontalmente los elementos */
+        align-items: center; /* (opcional) Centrar verticalmente */
+        list-style: none; /* Eliminar los puntos de la lista */
+        padding: 0; /* Eliminar el relleno interno */
+        margin: 0; /* Eliminar márgenes externos */
+      
+        
+    }
+    ul {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+    nav ul li a {
+        margin-left: 0px;
+        margin: 5px;
+        display: inline-block;
+        text-decoration: none; /* Quitar subrayado */
+        padding: 10px 20px;
+        border: 2px solid #00d45f57; /* Borde moderno */
+        border-radius: 8px; /* Bordes redondeados */
+        background-color: #90e79e; /* Fondo claro */
+        color: #00442a; /* Texto color moderno */
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        transition: all 0.4s ease; /* Transición suave */
+    
+        
+    }
+    
+    nav ul li a:hover {
+        background-color: #00d45fb6; /* Cambio de color al pasar el ratón */
+        color: white; /* Texto blanco */
+        transform: translateY(-2px); /* Efecto de elevación */
+    }
+    
+    .container {
+        display: flex; /* Activa Flexbox */
+        justify-content: center; /* Centra horizontalmente los PDFs */
+        align-items: center; /* Centra verticalmente (opcional) */
+        gap: 25px; /* Espacio entre los PDFs */
+        flex-wrap: wrap; /* Permite que los PDFs bajen a otra fila si no hay espacio */
+        min-height: 100vh; /* Centra en toda la pantalla */
+    }
+    
+    a {
+        color: #00d45fb6;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+#theme-toggle {
+    text-decoration: none; /* Quitar subrayado */
+    padding: 10px 20px;
+    border: 2px solid #00d45f57; /* Borde moderno */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #90e79e; /* Fondo claro */
+    color: #00442a; /* Texto color moderno */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: all 0.4s ease; /* Transición suave */
+    background-color: dadada;
+    position: absolute; /* Permite posicionarlo respecto al contenedor */
+    top: 10px; /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde la derecha */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: #00d45f57; /* Color de fondo del botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+#theme-toggle:hover {
+    color: white;
+    background-color: #00d45fb6; /* Cambio de color al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Tema claro (por defecto) */
+body.light-theme {
+    background-color: #ececec;
+    color: black;
+}
+
+/* Tema oscuro */
+body.dark-theme {
+    background-color: #222222;
+    color: white;
+}
+
+body.dark-theme .container {
+    background-color: #222222; /* Color oscuro para el contenedor */
+    color: #ffffff;            /* Color de texto blanco */
+}
